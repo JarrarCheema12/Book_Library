@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="submit" id="toggleBtn" value="Switch to Grid View">
+    <h1 class="Book-Heading">Book Library</h1>
+
+ 
+    <label for="sortSelect">Sort by:</label>
+    <select id="sortSelect">
+        <option value="title">Title (A-Z)</option>
+        <option value="publishedDate">Date of Release</option>
+    </select>
+
+    
+    <input type="text" id="searchInput" placeholder="Search by title">
+
+    <div id="Book-List" class="list-view"></div>
+
+    <div class="pagination">
+        <button id="prevPage" disabled>Previous</button>
+        <button id="nextPage">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
